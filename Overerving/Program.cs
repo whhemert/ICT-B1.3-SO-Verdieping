@@ -1,5 +1,5 @@
-﻿using ICT1._3_Voorbeelden_Lessen.OOP.Encapsulation;
-using ICT1._3_Voorbeelden_Lessen.OOP.Overerving;
+﻿using Encapsulation;
+using Overerving;
 
 internal class Program
 {

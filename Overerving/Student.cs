@@ -1,4 +1,4 @@
-namespace ICT1._3_Voorbeelden_Lessen.OOP.Overerving;
+namespace Overerving;
 
 public class Student : Persoon
 {
