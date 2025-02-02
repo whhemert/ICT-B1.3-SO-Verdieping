@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation", "Encapsulation\Encapsulation.csproj", "{86E27BD7-D961-461E-8589-E380FC94970D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01 Encapsulation", "Encapsulation\01 Encapsulation.csproj", "{86E27BD7-D961-461E-8589-E380FC94970D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriverLicense", "DriverLicense\DriverLicense.csproj", "{697FB1FF-0F02-4D7A-A024-E9AE055A5918}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02 DriverLicense", "DriverLicense\02 DriverLicense.csproj", "{697FB1FF-0F02-4D7A-A024-E9AE055A5918}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overerving", "Overerving\Overerving.csproj", "{EE4F90EC-99B5-446D-9D7C-18F0973F6429}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05 Overerving", "Overerving\05 Overerving.csproj", "{EE4F90EC-99B5-446D-9D7C-18F0973F6429}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03 StaticItems", "StaticItems\03 StaticItems.csproj", "{D8C5CBD3-FB3C-4CA9-9C78-A10F7D256D5C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04 Overloading", "Overloading\04 Overloading.csproj", "{735DFE33-C508-4AC8-A786-A8C081686AB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{EE4F90EC-99B5-446D-9D7C-18F0973F6429}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE4F90EC-99B5-446D-9D7C-18F0973F6429}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE4F90EC-99B5-446D-9D7C-18F0973F6429}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8C5CBD3-FB3C-4CA9-9C78-A10F7D256D5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8C5CBD3-FB3C-4CA9-9C78-A10F7D256D5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8C5CBD3-FB3C-4CA9-9C78-A10F7D256D5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8C5CBD3-FB3C-4CA9-9C78-A10F7D256D5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{735DFE33-C508-4AC8-A786-A8C081686AB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{735DFE33-C508-4AC8-A786-A8C081686AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{735DFE33-C508-4AC8-A786-A8C081686AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{735DFE33-C508-4AC8-A786-A8C081686AB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
