@@ -47,14 +47,14 @@ namespace Overloading
 
 		public void UpdateDateOfBirth(int year, int month, int day)
 		{
-			this.UpdateDateOfBirth(new DateTime(year, month, day));
+			_dateOfBirth = new DateTime(year, month, day);
 		}
 
 		public bool UpdateDateOfBirth(string dateOfBirth)
 		{
 			if (DateTime.TryParse(dateOfBirth, out DateTime parsedDate))
 			{
-				this.UpdateDateOfBirth(parsedDate);
+				_dateOfBirth = parsedDate;
 				return true;
 			}
 

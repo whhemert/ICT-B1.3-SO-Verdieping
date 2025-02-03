@@ -4,7 +4,7 @@ class Program
 	static void Main()
 	{
 		// Create a Driver object
-		Driver driver = new Driver("John Doe", new DateTime(1985, 5, 20), 1234567890, new DateTime(2026, 12, 31));
+		Driver driver = new Driver("John Doe", new DateTime(1985, 5, 20));
 
 		// Display initial details
 		driver.PrintDriverDetails();

@@ -3,7 +3,7 @@
 	public class Person
 	{
 		private string _name;
-		private static int _age;
+		private static const int _age;
 
 		public Person(string name, int age)
 		{
@@ -22,6 +22,7 @@
 			get { return _age; }
 		}
 
+		// in case the age is equal person2 will be returned
 		public static Person Oldest(Person person1, Person person2)
 		{
 			return person1.Age > person2.Age ? person1 : person2;

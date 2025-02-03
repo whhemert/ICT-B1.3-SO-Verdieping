@@ -5,18 +5,22 @@ public class Driver
     private long _driverLicenceNumber;
     private DateTime _driverLicenceValidUntil;
 
-    public Driver(string name, DateTime birthDay, long driverLicenceNumber, DateTime driverLicenceValidUntil)
+    public Driver(string name, DateTime birthDay)
     {
         _name = name;
         _birthDay = birthDay;
-        _driverLicenceNumber = driverLicenceNumber;
-        _driverLicenceValidUntil = driverLicenceValidUntil;
     }
 
     public void UpdateDriverLicence(long driverLicenceNumber, DateTime driverLicenceValidUntil)
     {
-        _driverLicenceNumber = driverLicenceNumber;
-        _driverLicenceValidUntil = driverLicenceValidUntil;
+        if (driverLicenceNumber >= 1_000_000)
+        {
+            _driverLicenceNumber = driverLicenceNumber;
+            _driverLicenceValidUntil = driverLicenceValidUntil;
+        } else
+        {
+            Console.WriteLine("Invalid driver licence number");
+		}
     }
 
     public void PrintDriverDetails()
