@@ -1,4 +1,4 @@
-namespace Overerving;
+namespace Schoolsysteem;
 
 public class Docent : Medewerker
 {
@@ -16,7 +16,7 @@ public class Docent : Medewerker
         _expertiseGebieden.Add(expertiseGebied);
     }
 
-    public override string Levensdoel()
+    public override string ActiviteitOfDoel()
     {
         return "Studenten begeleiden naar hun diploma";
     }

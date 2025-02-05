@@ -1,4 +1,4 @@
-namespace Overerving;
+namespace Schoolsysteem;
 
 public abstract class Medewerker : Persoon
 {
@@ -13,14 +13,4 @@ public abstract class Medewerker : Persoon
 
     public int PersoneelsNummer { get { return _personeelsNummer; } }
     public double Salaris { get { return _salaris; } }
-
-    public override string Levensdoel()
-    {
-        return "Werken voor Avans";
-    }
-
-    public string PersoonInfo()
-    {
-        return base.PersoonInfo() + $", met personeelsnummer {_personeelsNummer} en een salaris van {_salaris}";
-    }
 }

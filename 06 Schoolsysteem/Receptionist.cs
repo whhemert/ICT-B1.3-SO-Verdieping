@@ -1,4 +1,4 @@
-namespace Overerving;
+namespace Schoolsysteem;
 
 public class Receptionist : Medewerker
 {
@@ -11,7 +11,8 @@ public class Receptionist : Medewerker
 
     public string VasteLocatie { get { return _vasteLocatie; } }
 
-    public override string Levensdoel() {
-        return "Gebouwen draaiende houden";
+    public override string ActiviteitOfDoel() 
+    {
+        return "Telefoon beantwoorden";
     }
 }

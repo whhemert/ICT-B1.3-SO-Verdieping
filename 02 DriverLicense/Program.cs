@@ -13,7 +13,7 @@ class Program
 		driver.UpdateDriverLicence(9876543210, new DateTime(2030, 12, 31));
 
 		// Display updated details
-		Console.WriteLine("\nAfter updating license:");
+		Console.WriteLine("After updating license:");
 		driver.PrintDriverDetails();
 	}
 }

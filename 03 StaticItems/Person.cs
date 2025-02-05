@@ -3,7 +3,7 @@
 	public class Person
 	{
 		private string _name;
-		private static const int _age;
+		private static int _age;
 
 		public Person(string name, int age)
 		{

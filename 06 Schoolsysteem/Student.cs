@@ -1,4 +1,4 @@
-namespace Overerving;
+namespace Schoolsysteem;
 
 public class Student : Persoon
 {
@@ -11,7 +11,7 @@ public class Student : Persoon
 
     public int StudentNummer { get { return _studentNummer; } }
 
-    public override string Levensdoel()
+    public override string ActiviteitOfDoel()
     {
         return "Een diploma halen";
     }
