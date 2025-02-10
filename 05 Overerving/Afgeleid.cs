@@ -4,8 +4,9 @@
 	{
 		public override void ToonBericht()
 		{
-			Console.Write(_naam);
+			Console.WriteLine($"Naam : {_naam}");
 			base.ToonBericht();
+			Console.WriteLine("Aanvullend bericht uit de afgeleide klasse.");
 		}
 	}
 }
