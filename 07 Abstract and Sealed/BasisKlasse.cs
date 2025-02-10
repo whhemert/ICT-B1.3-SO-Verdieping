@@ -12,7 +12,7 @@ namespace Abstract_and_Sealed
 		
 		public virtual void SomeMethod()
 		{
-			// some implementation
+			Console.WriteLine("SomeMethod in BasisKlasse");
 		}
 	}
 }

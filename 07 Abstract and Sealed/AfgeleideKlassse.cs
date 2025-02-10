@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 namespace Abstract_and_Sealed
 {
 	public class AfgeleideKlassse : BasisKlasse
-	{	
+	{
 		public override string AbstractMethod()
 		{
-			return "needs to be implemented";
+			return "needs to be implemented here";
 		}
 
 		public sealed override void SomeMethod()
 		{
-			// some other implementation
+			Console.WriteLine("SomeMethod in AfgeleideKlassse");
 		}
 	}
 }

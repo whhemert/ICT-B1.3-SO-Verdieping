@@ -10,7 +10,7 @@ namespace Abstract_and_Sealed
 	{
 		//public override void SomeMethod()
 		//{
-		//	// some other implementation
+		//	Console.WriteLine("SomeMethod in AfgeleideAfgeleideKlassse");
 		//}
 	}
 }
