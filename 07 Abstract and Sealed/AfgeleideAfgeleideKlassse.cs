@@ -8,7 +8,7 @@ namespace Abstract_and_Sealed
 {
 	public class AfgeleideAfgeleideKlassse : AfgeleideKlassse
 	{
-		//public override void SomeOtherMethod()
+		//public override void SomeMethod()
 		//{
 		//	// some other implementation
 		//}

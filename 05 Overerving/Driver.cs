@@ -1,19 +1,29 @@
+using System.Xml.Linq;
+
 public class Driver : Person
 {
-    private long _driverLicenceNumber;
-    private DateTime _driverLicenceValidUntil;
+	private long _licenceNumber;
+	private DateTime _validUntil;
 
-    public Driver(string name, DateTime birthDay, long driverLicenceNumber, DateTime driverLicenceValidUntil) : base(name, birthDay)
+	public Driver(string name, DateTime birthDay, long licenceNumber, DateTime validUntil) : base(name, birthDay)
 	{
-		_driverLicenceNumber = driverLicenceNumber;
-		_driverLicenceValidUntil = driverLicenceValidUntil;
+		_licenceNumber = licenceNumber;
+		_validUntil = validUntil;
 	}
 
-    public void PrintDriverDetails()
-    {
-        Console.WriteLine($"Name: {_name}");
-        Console.WriteLine($"Birth Day: {_birthDay.ToShortDateString()}");
-        Console.WriteLine($"Driver Licence Number: {_driverLicenceNumber}");
-        Console.WriteLine($"Licence Valid Until: {_driverLicenceValidUntil.ToShortDateString()}");
-    }
+	public void PrintDriverDetails()
+	{
+		Console.WriteLine($"Name: {_name}");
+		Console.WriteLine($"Birth Day: {_birthDay.ToShortDateString()}");
+		Console.WriteLine($"Licence Number: {_licenceNumber}");
+		Console.WriteLine($"Licence Valid Until: {_validUntil.ToShortDateString()}");
+	}
+
+	public override string ToString()
+	{
+		return $"Name: {_name}, " +
+			$"Birth Day: {_birthDay.ToShortDateString()}, " +
+			$"Licence Number: {_licenceNumber}, " +
+			$"Licence Valid Until: {_validUntil.ToShortDateString()}";
+	}
 }
