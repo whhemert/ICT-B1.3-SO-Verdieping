@@ -18,6 +18,6 @@ public class Docent : Medewerker
     {
         Console.WriteLine($"Deze persoon heeft de naam {_voorNaam} {_achterNaam} en is geboren op {_geboorteDatum}");
 		Console.WriteLine($"En is medewerker met personeelsnummer {_personeelsNummer} en een salaris van {_salaris} euro");
-		Console.WriteLine($"Als docent heeft deze persoon de expertise gebieden {_expertiseGebieden}");
+		Console.WriteLine($"Als docent heeft deze persoon de expertise gebieden {String.Join(", ", _expertiseGebieden)}");
 	}
 }

@@ -9,7 +9,10 @@
 			student.PrintInfo();
 
 			Console.WriteLine("\n== docent ==");
-			Persoon docent = new Docent("Fred", "Fakkel", new DateOnly(2002, 6, 17), 202002, 2000.00);
+			Docent docent = new Docent("Fred", "Fakkel", new DateOnly(2002, 6, 17), 202002, 2000.50);
+			docent.AddExpertiseGebied("C#");
+			docent.AddExpertiseGebied("Unity");
+			docent.AddExpertiseGebied("Scrum");
 			docent.PrintInfo();
 
 			Console.WriteLine("\n== receptionist ==");
