@@ -9,15 +9,15 @@ public class Docent : Medewerker
         _expertiseGebieden = new();
     }
 
-    public List<string> ExpertiseGebieden { get { return _expertiseGebieden; } }
-
     public void AddExpertiseGebied(string expertiseGebied)
     {
         _expertiseGebieden.Add(expertiseGebied);
     }
 
-    public override string ActiviteitOfDoel()
+    public override void PrintInfo()
     {
-        return "Studenten begeleiden naar hun diploma";
-    }
+        Console.WriteLine($"Deze persoon heeft de naam {_voorNaam} {_achterNaam} en is geboren op {_geboorteDatum}");
+		Console.WriteLine($"En is medewerker met personeelsnummer {_personeelsNummer} en een salaris van {_salaris} euro");
+		Console.WriteLine($"Als docent heeft deze persoon de expertise gebieden {_expertiseGebieden}");
+	}
 }

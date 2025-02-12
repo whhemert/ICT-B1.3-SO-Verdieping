@@ -9,10 +9,9 @@ public class Student : Persoon
         _studentNummer = studentNummer;
     }
 
-    public int StudentNummer { get { return _studentNummer; } }
-
-    public override string ActiviteitOfDoel()
+    public override void PrintInfo()
     {
-        return "Een diploma halen";
-    }
+		Console.WriteLine($"Deze persoon heeft de naam {_voorNaam} {_achterNaam} en is geboren op {_geboorteDatum}");
+		Console.WriteLine($"En is student met studentnummer {_studentNummer}");
+	}
 }
