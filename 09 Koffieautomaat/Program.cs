@@ -1,4 +1,4 @@
-﻿namespace Interfaces;
+﻿namespace KoffieAutomaat;
 
 public class Program
 {
