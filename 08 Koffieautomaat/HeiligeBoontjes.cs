@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace KoffieAutomaat
 {
-	public class HeiligeBoontjes : IKoffieAutomaat, IDisposable
+	public class HeiligeBoontjes : IKoffieAutomaat
 	{
-		public void Dispose()
-		{
-			throw new NotImplementedException();
-		}
-
 		public Cappuccino BestelCappuccino()
 		{
 			// stappen en controles voor het maken van een capppuccino
@@ -30,7 +25,6 @@ namespace KoffieAutomaat
 			// stappen en controles voor het maken van een koffie
 			return new Koffie(5, false, false);
 		}
-
 
 		public void OnderhoudUitvoeren()
 		{

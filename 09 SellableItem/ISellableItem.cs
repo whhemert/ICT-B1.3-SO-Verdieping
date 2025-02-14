@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Interfaces
+namespace SellableItem
 {
-	public class Phone : ISellableItem
+	public interface ISellableItem
 	{
+		public string ProductInfo();
+		public string Identifier();
 	}
 }
