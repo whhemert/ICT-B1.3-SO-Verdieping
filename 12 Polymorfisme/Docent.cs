@@ -11,8 +11,9 @@ internal class Docent : Persoon
 
     public long PersoneelsNummer { get { return _personeelsNummer; } }
 
-	public override string MethodeNaam()
+	public override string PrintInfo()
 	{
-		return "Totaal random andere implementatie voor docent, chaos!";
+		base.PrintInfo();
+		return $"Naam: {_naam}, Personeelsnummer: {_personeelsNummer}";
 	}
 }
