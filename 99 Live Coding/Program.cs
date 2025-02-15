@@ -1,9 +1,10 @@
 ﻿namespace Live_Coding;
 
-public class Program
+internal class Program
 {
 	private static void Main(string[] args)
 	{
-		// TODO
+		Hedgehog hedgehog = new Hedgehog("Sonic", new DateOnly(1991, 6, 23), 7000);
+		hedgehog.PrintInfo();
 	}
 }

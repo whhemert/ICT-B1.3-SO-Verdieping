@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmartPhone
 {
-	public interface IWifiConnection
+	internal interface IWifiConnection
 	{
 		public void Connect(string wifiName);
 		public void Disconnect();

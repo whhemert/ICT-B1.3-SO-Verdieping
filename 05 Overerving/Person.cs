@@ -1,4 +1,4 @@
-public class Person
+internal class Person
 {
     protected string _name;
 	protected DateTime _birthDay;

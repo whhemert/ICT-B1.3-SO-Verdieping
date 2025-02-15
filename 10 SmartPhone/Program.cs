@@ -1,6 +1,6 @@
 ﻿namespace SmartPhone;
 
-public class Program
+internal class Program
 {
 	private static void Main(string[] args)
 	{

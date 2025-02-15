@@ -1,6 +1,6 @@
 ﻿using Abstract_and_Sealed;
 
-public class Program
+internal class Program
 {
 	private static void Main(string[] args)
 	{

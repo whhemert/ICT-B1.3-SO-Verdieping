@@ -1,6 +1,6 @@
 namespace Polymorfisme;
 
-public class Docent : Persoon
+internal class Docent : Persoon
 {
     private long _personeelsNummer;
 

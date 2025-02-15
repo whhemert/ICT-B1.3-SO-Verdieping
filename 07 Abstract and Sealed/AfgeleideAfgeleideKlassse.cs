@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Abstract_and_Sealed
 {
-	public class AfgeleideAfgeleideKlassse : AfgeleideKlassse
+	internal class AfgeleideAfgeleideKlassse : AfgeleideKlassse
 	{
 		//public override void SomeMethod()
 		//{

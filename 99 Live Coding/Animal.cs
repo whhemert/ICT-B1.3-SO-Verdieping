@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Live_Coding
 {
-	public class Animal
+	internal class Animal
 	{
 		private string _name;
 		private DateOnly _dateOfBirth;

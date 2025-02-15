@@ -1,7 +1,7 @@
 namespace Schoolsysteem;
 
 // Receptionist is een subklasse van Medewerker en erft dus de attributen van Medewerker
-public class Receptionist : Medewerker
+internal class Receptionist : Medewerker
 {
 	// Deze attributen worden toegevoegd aan de attributen die geerft worden van Medewerker
 	private string _vasteLocatie;

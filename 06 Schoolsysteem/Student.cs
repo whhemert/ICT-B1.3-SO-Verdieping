@@ -1,7 +1,7 @@
 namespace Schoolsysteem;
 
 // Student is een subklasse van Persoon en erft dus de attributen van Persoon
-public class Student : Persoon
+internal class Student : Persoon
 {
 	// Deze attributen worden toegevoegd aan de attributen die geerft worden van Persoon
 	private int _studentNummer;

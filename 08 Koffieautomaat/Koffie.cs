@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KoffieAutomaat
 {
-	public class Koffie
+	internal class Koffie
 	{
 		private int _sterkte;
 		private bool _suiker;

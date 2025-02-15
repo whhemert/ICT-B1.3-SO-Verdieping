@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Overerving
 {
-	public class Basis
+	internal class Basis
 	{
 		protected string _naam;
 		public Basis()

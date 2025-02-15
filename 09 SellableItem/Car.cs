@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SellableItem
 {
-	public class Car : ISellableItem
+	internal class Car : ISellableItem
 	{
 		private string _make;
 		private string _model;

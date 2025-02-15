@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Overloading
 {
-	public class Calculator
+	internal class Calculator
 	{
 		public int Add(int a, int b)
 		{

@@ -1,6 +1,6 @@
 using System.Xml.Linq;
 
-public class Driver : Person
+internal class Driver : Person
 {
 	private long _licenceNumber;
 	private DateTime _validUntil;

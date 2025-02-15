@@ -1,6 +1,6 @@
 namespace Encapsulation;
 
-public class Pet
+internal class Pet
 {
 	private string _name;
 	public Pet(string name)

@@ -1,4 +1,4 @@
-public class Driver
+internal class Driver
 {
 	private string _name;
 	private DateTime _birthDay;

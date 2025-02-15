@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SellableItem
 {
-	public class Phone : ISellableItem
+	internal class Phone : ISellableItem
 	{
 		private string _manufacturer;
 		private string _model;

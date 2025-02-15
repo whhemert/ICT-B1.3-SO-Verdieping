@@ -9,7 +9,7 @@ namespace Overloading
 	using System;
 	using static System.Net.Mime.MediaTypeNames;
 
-	public class Person
+	internal class Person
 	{
 		private string _name;
 		private DateTime _dateOfBirth;

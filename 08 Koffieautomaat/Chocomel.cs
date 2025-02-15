@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KoffieAutomaat
 {
-	public class Chocomel
+	internal class Chocomel
 	{
 		protected string _booze;
 		protected bool _slagroom;

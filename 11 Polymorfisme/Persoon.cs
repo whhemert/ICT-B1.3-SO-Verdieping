@@ -1,6 +1,6 @@
 namespace Polymorfisme;
 
-public class Persoon
+internal class Persoon
 {
     private string _naam;
 

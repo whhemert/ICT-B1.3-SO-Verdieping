@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KoffieAutomaat
 {
-	public class HeiligeBoontjes : IKoffieAutomaat
+	internal class HeiligeBoontjes : IKoffieAutomaat
 	{
 		public Cappuccino BestelCappuccino()
 		{

@@ -1,9 +1,11 @@
 ﻿namespace StaticItems
 {
-	public class Person
+	internal class Person
 	{
 		private string _name;
-		private static int _age;
+		// static yiels a possible problem
+		//private static int _age;
+		private int _age;
 
 		public Person(string name, int age)
 		{

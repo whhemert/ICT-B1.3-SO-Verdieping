@@ -1,6 +1,6 @@
 ﻿namespace Overerving
 {
-	public class Afgeleid : Basis
+	internal class Afgeleid : Basis
 	{
 		public override void ToonBericht()
 		{

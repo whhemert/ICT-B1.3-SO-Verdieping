@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SmartPhone
 {
-	public interface IChargable
+	internal interface IChargable
 	{
 		public void Charge(int increasedPercentace);
 		public void PrintChargeInfo();

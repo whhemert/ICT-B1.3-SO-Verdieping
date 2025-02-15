@@ -1,7 +1,7 @@
 namespace Schoolsysteem;
 
 // Docent is een subklasse van Medewerker en erft dus de attributen van Medewerker
-public class Docent : Medewerker
+internal class Docent : Medewerker
 {
 	// Deze attributen worden toegevoegd aan de attributen die geerft worden van Medewerker
 	private List<string> _expertiseGebieden;

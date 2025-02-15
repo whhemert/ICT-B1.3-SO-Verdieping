@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SellableItem
 {
-	public interface ISellableItem
+	internal interface ISellableItem
 	{
 		public string ProductInfo();
 		public string Identifier();
