@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace KoffieAutomaat;
 
-namespace KoffieAutomaat
+internal class Cappuccino
 {
-	internal class Cappuccino
-	{
-		int _sterkte;
+	int _sterkte;
 
-		public Cappuccino(int sterkte)
-		{
-			_sterkte = sterkte;
-		}
+	public Cappuccino(int sterkte)
+	{
+		_sterkte = sterkte;
 	}
 }

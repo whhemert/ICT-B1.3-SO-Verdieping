@@ -1,24 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Meerdere_Ervingen;
 
-namespace Meerdere_Ervingen
+internal class Hedgehog : Animal, IZoo
 {
-	internal class Hedgehog : Animal, IZoo
+	private int _numberOfSpikes;
+
+	public Hedgehog(string name, DateOnly dateOfBirth, int numberOfSpikes) : base(name, dateOfBirth)
 	{
-		private int _numberOfSpikes;
+		_numberOfSpikes = numberOfSpikes;
+	}
 
-		public Hedgehog(string name, DateOnly dateOfBirth, int numberOfSpikes) : base(name, dateOfBirth)
-		{
-			_numberOfSpikes = numberOfSpikes;
-		}
-
-		public override void PrintInfo()
-		{
-			base.PrintInfo();
-			Console.WriteLine($"Number of spikes: {_numberOfSpikes}");
-		}
+	public override void PrintInfo()
+	{
+		base.PrintInfo();
+		Console.WriteLine($"Number of spikes: {_numberOfSpikes}");
 	}
 }

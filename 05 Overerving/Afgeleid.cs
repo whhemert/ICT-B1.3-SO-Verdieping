@@ -1,12 +1,11 @@
-﻿namespace Overerving
+﻿namespace Overerving;
+
+internal class Afgeleid : Basis
 {
-	internal class Afgeleid : Basis
+	public override void ToonBericht()
 	{
-		public override void ToonBericht()
-		{
-			Console.WriteLine($"Naam : {_naam}");
-			base.ToonBericht();
-			Console.WriteLine("Aanvullend bericht uit de afgeleide klasse.");
-		}
+		Console.WriteLine($"Naam : {_naam}");
+		base.ToonBericht();
+		Console.WriteLine("Aanvullend bericht uit de afgeleide klasse.");
 	}
 }

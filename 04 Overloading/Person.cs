@@ -1,65 +1,55 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Overloading;
 
-namespace Overloading
+internal class Person
 {
-	using System;
-	using static System.Net.Mime.MediaTypeNames;
+	private string _name;
+	private DateTime _dateOfBirth;
 
-	internal class Person
+	// Constructors
+	public Person(string name) : this(name, DateTime.UnixEpoch)
 	{
-		private string _name;
-		private DateTime _dateOfBirth;
+		// Empty constructor body, base constructor is called
+	}
 
-		// Constructors
-		public Person(string name) : this(name, DateTime.UnixEpoch)
+	public Person(string name, DateTime dateOfBirth)
+	{
+		_name = name;
+		_dateOfBirth = dateOfBirth;
+	}
+
+	// Properties
+	public string Name
+	{
+		get { return _name; }
+		set { _name = value; }
+	}
+
+	public DateTime DateOfBirth
+	{
+		get { return _dateOfBirth; }
+		set { _dateOfBirth = value; }
+	}
+
+	// Methodes om geboortedatum bij te werken
+	public void UpdateDateOfBirth(DateTime dateOfBirth)
+	{
+		_dateOfBirth = dateOfBirth;
+	}
+
+	public void UpdateDateOfBirth(int year, int month, int day)
+	{
+		_dateOfBirth = new DateTime(year, month, day);
+	}
+
+	public bool UpdateDateOfBirth(string dateOfBirth)
+	{
+		if (DateTime.TryParse(dateOfBirth, out DateTime parsedDate))
 		{
-			// Empty constructor body, base constructor is called
+			_dateOfBirth = parsedDate;
+			return true;
 		}
 
-		public Person(string name, DateTime dateOfBirth)
-		{
-			_name = name;
-			_dateOfBirth = dateOfBirth;
-		}
-
-		// Properties
-		public string Name
-		{
-			get { return _name; }
-			set { _name = value; }
-		}
-
-		public DateTime DateOfBirth
-		{
-			get { return _dateOfBirth; }
-			set { _dateOfBirth = value; }
-		}
-
-		// Methodes om geboortedatum bij te werken
-		public void UpdateDateOfBirth(DateTime dateOfBirth)
-		{
-			_dateOfBirth = dateOfBirth;
-		}
-
-		public void UpdateDateOfBirth(int year, int month, int day)
-		{
-			_dateOfBirth = new DateTime(year, month, day);
-		}
-
-		public bool UpdateDateOfBirth(string dateOfBirth)
-		{
-			if (DateTime.TryParse(dateOfBirth, out DateTime parsedDate))
-			{
-				_dateOfBirth = parsedDate;
-				return true;
-			}
-
-			Console.WriteLine("Ongeldige datumformaat. Verwacht formaat: 'YYYY-MM-DD'.");
-			return false;
-		}
+		Console.WriteLine("Ongeldige datumformaat. Verwacht formaat: 'YYYY-MM-DD'.");
+		return false;
 	}
 }

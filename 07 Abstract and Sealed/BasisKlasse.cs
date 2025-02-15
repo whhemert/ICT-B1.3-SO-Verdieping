@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Abstract_and_Sealed;
 
-namespace Abstract_and_Sealed
+public abstract class BasisKlasse
 {
-	public abstract class BasisKlasse
+	public abstract string AbstractMethod();
+	
+	public virtual void SomeMethod()
 	{
-		public abstract string AbstractMethod();
-		
-		public virtual void SomeMethod()
-		{
-			Console.WriteLine("SomeMethod in BasisKlasse");
-		}
+		Console.WriteLine("SomeMethod in BasisKlasse");
 	}
 }

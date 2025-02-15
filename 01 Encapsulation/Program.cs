@@ -1,4 +1,5 @@
 ﻿namespace Encapsulation;
+
 internal class Program
 {
 	private static void Main(string[] args)

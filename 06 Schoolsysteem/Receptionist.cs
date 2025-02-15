@@ -4,7 +4,7 @@ namespace Schoolsysteem;
 internal class Receptionist : Medewerker
 {
 	// Deze attributen worden toegevoegd aan de attributen die geerft worden van Medewerker
-	private string _vasteLocatie;
+	private readonly string _vasteLocatie;
 
 	// Constructor van de Receptionist klasse waarbij alle attributen van Receptionist, Medewerker en Persoon worden ingevuld
 	public Receptionist(string voorNaam, string achterNaam, DateOnly geboorteDatum, int personeelsNummer, double salaris, string vasteLocatie) : base(voorNaam, achterNaam, geboorteDatum, personeelsNummer, salaris)
